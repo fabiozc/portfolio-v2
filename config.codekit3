@@ -376,59 +376,112 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/font\/FiraSans-Heavy.eot": {
+	"\/font\/Bitter-Bold.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/font\/FiraSans-Heavy.eot",
+		"oAP": "\/font\/Bitter-Bold.ttf",
 		"oF": 0
 		},
-	"\/font\/FiraSans-Heavy.ttf": {
+	"\/font\/Bitter-Italic.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/font\/FiraSans-Heavy.ttf",
+		"oAP": "\/font\/Bitter-Italic.ttf",
 		"oF": 0
 		},
-	"\/font\/FiraSans-Heavy.woff": {
+	"\/font\/Bitter-Regular.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/font\/FiraSans-Heavy.woff",
+		"oAP": "\/font\/Bitter-Regular.ttf",
 		"oF": 0
 		},
-	"\/font\/FiraSans-Regular.eot": {
+	"\/font\/OFL.txt": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/font\/FiraSans-Regular.eot",
+		"oAP": "\/font\/OFL.txt",
 		"oF": 0
 		},
-	"\/font\/FiraSans-Regular.ttf": {
+	"\/font\/SourceSansPro-Black.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/font\/FiraSans-Regular.ttf",
+		"oAP": "\/font\/SourceSansPro-Black.ttf",
 		"oF": 0
 		},
-	"\/font\/FiraSans-Regular.woff": {
+	"\/font\/SourceSansPro-BlackItalic.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/font\/FiraSans-Regular.woff",
+		"oAP": "\/font\/SourceSansPro-BlackItalic.ttf",
 		"oF": 0
 		},
-	"\/font\/FiraSans-Thin.eot": {
+	"\/font\/SourceSansPro-Bold.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/font\/FiraSans-Thin.eot",
+		"oAP": "\/font\/SourceSansPro-Bold.ttf",
 		"oF": 0
 		},
-	"\/font\/FiraSans-Thin.ttf": {
+	"\/font\/SourceSansPro-BoldItalic.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/font\/FiraSans-Thin.ttf",
+		"oAP": "\/font\/SourceSansPro-BoldItalic.ttf",
 		"oF": 0
 		},
-	"\/font\/FiraSans-Thin.woff": {
+	"\/font\/SourceSansPro-ExtraLight.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/font\/FiraSans-Thin.woff",
+		"oAP": "\/font\/SourceSansPro-ExtraLight.ttf",
 		"oF": 0
+		},
+	"\/font\/SourceSansPro-ExtraLightItalic.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/font\/SourceSansPro-ExtraLightItalic.ttf",
+		"oF": 0
+		},
+	"\/font\/SourceSansPro-Italic.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/font\/SourceSansPro-Italic.ttf",
+		"oF": 0
+		},
+	"\/font\/SourceSansPro-Light.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/font\/SourceSansPro-Light.ttf",
+		"oF": 0
+		},
+	"\/font\/SourceSansPro-LightItalic.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/font\/SourceSansPro-LightItalic.ttf",
+		"oF": 0
+		},
+	"\/font\/SourceSansPro-Regular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/font\/SourceSansPro-Regular.ttf",
+		"oF": 0
+		},
+	"\/font\/SourceSansPro-SemiBold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/font\/SourceSansPro-SemiBold.ttf",
+		"oF": 0
+		},
+	"\/font\/SourceSansPro-SemiBoldItalic.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/font\/SourceSansPro-SemiBoldItalic.ttf",
+		"oF": 0
+		},
+	"\/img\/fabiozc.png": {
+		"ft": 32768,
+		"iS": 118926,
+		"oA": 0,
+		"oAP": "\/img\/fabiozc.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/port\/9digito-port3-1.png": {
 		"ft": 32768,
@@ -662,8 +715,8 @@
 	},
 "projectAttributes": {
 	"creationDate": 530407060,
-	"displayValue": "v2",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "FabioZC - v2",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-archer"
 	},
 "projectSettings": {
