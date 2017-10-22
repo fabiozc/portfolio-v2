@@ -1,0 +1,7 @@
+﻿/* LOADING ------------------------------ */
+.loader(@color: @linkActiveColor, @size: 17px){ position: relative; animation: spin 1.5s infinite linear ; -webkit-animation: spin 1.5s infinite linear; -moz-animation: spin 1.5s infinite linear; border: 1px solid @color; border-top-color: transparent; border-bottom-color: transparent; border-radius: 50%; content: " "; display: inline-block; margin: 0 5px; .square(@size);}
+@keyframes spin{ from {transform: rotate(0deg);} to {transform: rotate(360deg);}}
+@-webkit-keyframes spin{ from {-webkit-transform: rotate(0deg);} to {-webkit-transform: rotate(360deg);}}
+
+.loading{ cursor: default !important;}
+.loading:before{ .loader(@white, 12px);} // Apply this class to specified element to customize:

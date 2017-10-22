@@ -1,0 +1,57 @@
+//@iconVersion: "v1.0";
+
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400|Noto+Serif);
+
+@font-face {
+	font-family: 'FiraSans-Thin' ;
+	src: url('@{baseUrl}/font/FiraSans-Thin.eot');
+	src: url('@{baseUrl}/font/FiraSans-Thin.eot?#iefix') format('embedded-opentype'),
+		url('@{baseUrl}/font/FiraSans-Thin.woff') format('woff'),
+		url('@{baseUrl}/font/FiraSans-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+	font-stretch: normal;
+}
+@font-face {
+	font-family: 'FiraSans-Regular' ;
+	src: url('@{baseUrl}/font/FiraSans-Regular.eot');
+	src: url('@{baseUrl}/font/FiraSans-Regular.eot?#iefix') format('embedded-opentype'),
+		url('@{baseUrl}/font/FiraSans-Regular.woff') format('woff'),
+		url('@{baseUrl}/font/FiraSans-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+}
+@font-face {
+	font-family: 'FiraSans-Heavy' ;
+	src: url('@{baseUrl}/font/FiraSans-Heavy.eot');
+	src: url('@{baseUrl}/font/FiraSans-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('@{baseUrl}/font/FiraSans-Heavy.woff') format('woff'),
+		url('@{baseUrl}/font/FiraSans-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+}
+/*@font-face {
+	font-family: 'mentorama-@{iconVersion}' ;
+	src: url('@{baseUrl}/font/mentorama-@{iconVersion}.eot');
+	src: url('@{baseUrl}/font/mentorama-@{iconVersion}.eot?#iefix') format('embedded-opentype'),
+		//url('@{baseUrl}/font/mentorama-@{iconVersion}.woff2') format('woff2'),
+		url('@{baseUrl}/font/mentorama-@{iconVersion}.woff') format('woff'),
+		url('@{baseUrl}/font/mentorama-@{iconVersion}.ttf') format('truetype'),
+		url('@{baseUrl}/font/mentorama-@{iconVersion}.svg#mentorama-@{iconVersion}') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+}*/
+
+.sansLight{ font-family: "FiraSans-Thin", "Open Sans", Helvetica, sans-serif; font-weight: 100; -webkit-font-smoothing: antialiased;}
+.sans{ font-family: "Fira Sans", "Open Sans", Helvetica, sans-serif; font-weight: 400; -webkit-font-smoothing: antialiased;}
+.sansBold{ font-family: "FiraSans-Heavy", "Open Sans", Helvetica, sans-serif; font-weight: 900; -webkit-font-smoothing: antialiased;}
+.serif{ font-family: "Noto Serif", Georgia, serif; font-weight: 400; -webkit-font-smoothing: antialiased;}
+
+.font-family{ .sans;}
+//.font-icon{ font-family: 'mentorama-@{iconVersion}'; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; font-weight: normal; }
+
+.bold{ .sansBold; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased;}
+.italic{ font-style: italic;}

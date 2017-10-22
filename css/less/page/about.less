@@ -1,0 +1,43 @@
+﻿/* ABOUT ------------------------------ */
+.about{
+	.btn-resume{ .btn-secondary;
+		&:before{ content: "⇤"; float: left; font-size: @largeFont; margin: -1px 10px 0 0px; .rotate(-90deg);}
+	}
+	.btn-contact{ .btn-secondary;
+		&:before{ content: "✉"; float: left; font-size: @largestFont; margin: 2px 10px -2px 0px;}
+	}
+	.tools-list,
+	.blogs-list,
+	.people-list,
+	.companies-list{ text-align: center; margin: @vSpace;
+		li{ display: inline-block; font-size: @smallestFont; letter-spacing: 2px; line-height: 120%; margin: 0 -4px 22px 0; text-transform: uppercase; vertical-align: top; text-align: center;  width: 10%; min-height: 132px;
+			img{ .border-radius(100px); .box-shadow(0 0 0 3px @bgcolor,0 0 0 4px @grayLighter;); display: block; margin: 4px auto @margin/2; .transition(all @anim ease); .square(66px); }
+			a{ color: @stColor; display: block; height: 88px; .transition(all @anim ease);}
+			&:hover{ color: @linkColor;
+				a{ color: @linkColor;}
+				img{ .box-shadow(0 0 0 3px @bgcolor,0 0 0 4px @linkColor;);}
+			}
+		}
+	}
+	.skills{ display: block; margin: @vSpace*2 @margin @vSpace; text-align: center;
+		.skill-item{ color: @blue; display: inline-block; font-size: @largestFont*1.2; .sansLight; line-height: 44px; margin: 0 @margin/2;
+			&.largest{ font-size: @largestFont*2.2;}
+			&.larger{ font-size: @largestFont*1.9;}
+			&.large{ font-size: @largestFont*1.5;}
+			&.small{ font-size: @largestFont;}
+			&.smallest{ font-size: @largestFont*0.9;}
+			span{ font-size: @smallestFont; .sans;}
+		}
+	}
+	.about-intro{ margin-bottom: @vSpace;
+		.intro-text{ display: inline-block; width: 70%;}
+		.twisted{ display: inline-block; .rotate(-5deg);}
+		.btn-intro{ display: inline-block; float: right; margin-top: @vSpace*2 - 3px;
+			&.btn-contact{ margin-top: @vSpace - 3px;}
+		}
+	}
+	//.ig-item{ .hide;
+	//	&.active{ .show;}
+	//}
+	
+}
