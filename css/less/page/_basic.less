@@ -1,5 +1,5 @@
 /*** FABIOZC ***/
-body{ background-image: url('@{baseUrl}/img/bg.png'), linear-gradient(205deg, @blue -5%, @bgcolor 18%, @bgcolor 100%); background-repeat: repeat-y, no-repeat; background-position: center top, right 1px;}
+body{ background-image: url('@{baseUrl}/img/bg.png'); background-color: #f7f8fa;}
 //body{ background-image: url('@{baseUrl}/img/grid.png');}
 
 // Base URL, Reset, Grid, Core variables and mixins
@@ -34,14 +34,13 @@ body > section{ .clearfix;}
     }
 }
 
-.intro,
 .portfolio,
 .contact,
 .about{ .container; margin-bottom: @vSpace*2;} 
 .section-title{ position: relative; top: 13px; z-index: -1; color: rgba(74,74,74,.1); display: block; .sansLight; font-size: 194px; letter-spacing: -6.33px; text-align: right; text-transform: uppercase;}
 .section-help{ .sansBold; font-size: @largestFont; position: relative; top: 2px;}
 .section-subtitle{ .serif; font-size: @largerFont; margin: 0 0 @vSpace; text-align: center;}
-.text-title{ font-size: @smallFont; .bold; letter-spacing: 4px; margin: @vSpace 0 0 0; text-transform: uppercase;}
+.text-title{ font-size: @smallFont; .sansLight; letter-spacing: 4px; margin: @vSpace 0 0 0; text-transform: uppercase;}
 .nav{ height: @vSpace;
     a{ border-bottom: 2px solid transparent; border-top: 2px solid transparent; border-radius: 2px; display: inline-block; font-size: @smallerFont; line-height: 40px; margin: 0 @margin/4 0 0; padding: 0 @padding/2; text-transform: uppercase;
         &:hover{ background-color: @linkColor; color: @white;}
