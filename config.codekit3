@@ -382,24 +382,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/font\/Bitter-Bold.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/font\/Bitter-Bold.ttf",
-		"oF": 0
-		},
-	"\/font\/Bitter-Italic.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/font\/Bitter-Italic.ttf",
-		"oF": 0
-		},
-	"\/font\/Bitter-Regular.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/font\/Bitter-Regular.ttf",
-		"oF": 0
-		},
 	"\/font\/OFL.txt": {
 		"ft": 8192,
 		"oA": 2,
