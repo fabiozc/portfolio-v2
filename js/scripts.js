@@ -50,6 +50,15 @@ $(document).ready(function($) {
     });
 });
 
+$(document).scroll(function() {
+	$("#intro").css({
+		"background-position-y": (-$(this).scrollTop()/20)
+	});
+	$("#intro .container").css({
+		"opacity": 1 - (parseInt($(this).scrollTop())/350)
+	});
+});
+
 // //Instagram Photos
 // var feed = new Instafeed({
 // 	get: 'user',

@@ -263,6 +263,10 @@ textarea {
 html {
   overflow-x: hidden;
 }
+html,
+body {
+  height: 100%;
+}
 a {
   color: #F05522;
   text-decoration: none;
@@ -326,40 +330,32 @@ body > section:after {
     width: 100%;
   }
 }
+.main-section {
+  position: relative;
+  background-color: #FFF;
+}
+.main-section:nth-child(1) {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  height: 480px;
+}
+.main-section:nth-child(2) {
+  margin-top: 480px;
+  padding-top: 80px;
+}
 .portfolio,
 .contact,
 .about {
-  *zoom: 1;
-  margin: 0 auto;
-  width: 1170px;
-  margin-bottom: 88px;
-}
-.portfolio:before,
-.contact:before,
-.about:before,
-.portfolio:after,
-.contact:after,
-.about:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.portfolio:after,
-.contact:after,
-.about:after {
-  clear: both;
-}
-@media (max-width: 591px) {
-  .portfolio,
-  .contact,
-  .about {
-    width: 100%;
-  }
+  padding-bottom: 88px;
 }
 .section-title {
   position: relative;
   top: 13px;
-  z-index: -1;
+  z-index: 0;
   color: rgba(74, 74, 74, 0.1);
   display: block;
   font-family: "SourceSansPro-Light", "Open Sans", Helvetica, sans-serif;
@@ -377,6 +373,7 @@ body > section:after {
   font-size: 32px;
   position: relative;
   top: 2px;
+  z-index: 1;
 }
 .section-subtitle {
   font-family: "Noto Serif", Georgia, serif;
@@ -491,8 +488,7 @@ body > section:after {
   color: inherit;
 }
 .footer {
-  background-color: #FFF;
-  border-top: 1px dashed #7989dd;
+  background-color: #FFFFFF;
   padding: 88px;
   text-align: center;
 }
@@ -648,7 +644,6 @@ body > section:after {
 /* INTRO ------------------------------ */
 .intro {
   background-color: #f7f8fa;
-  border-bottom: 100px solid #FFF;
 }
 .intro .container {
   background: url('/img/fabiozc.png') no-repeat right bottom;
@@ -662,15 +657,15 @@ body > section:after {
   font-family: "SourceSansPro-Regular", "Open Sans", Helvetica, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  font-size: 62px;
-  margin-top: 154px;
+  font-size: 68px;
+  margin-top: 176px;
 }
 .intro .site-description {
   display: block;
   font-family: "SourceSansPro-Light", "Open Sans", Helvetica, sans-serif;
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
-  font-size: 30px;
+  font-size: 36px;
   margin-top: 22px;
   margin-bottom: 44px;
   padding-right: 40%;

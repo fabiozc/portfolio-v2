@@ -13,6 +13,8 @@ body{ background-image: url('@{baseUrl}/img/bg.png'); background-color: #f7f8fa;
 
 /* Basic CSS */
 html{ overflow-x: hidden; }
+html,
+body{ height: 100%;}
 a{ color: @linkColor; text-decoration: none; text-decoration: none;
     &:hover{ color: @linkColorHover; .transition(all @anim linear);}
 }
@@ -33,12 +35,15 @@ body > section{ .clearfix;}
         &{ width: 100%;}
     }
 }
+.main-section{ position: relative; background-color: @white;}
+.main-section:nth-child(1){ position: fixed; top: 0; right: 0; left: 0; z-index: -1; background-size: cover; height: 480px;}
+.main-section:nth-child(2){ margin-top: 480px; padding-top: 80px;}
 
 .portfolio,
 .contact,
-.about{ .container; margin-bottom: @vSpace*2;} 
-.section-title{ position: relative; top: 13px; z-index: -1; color: rgba(74,74,74,.1); display: block; .sansLight; font-size: 194px; letter-spacing: -6.33px; text-align: right; text-transform: uppercase;}
-.section-help{ .sansBold; font-size: @largestFont; position: relative; top: 2px;}
+.about{ padding-bottom: @vSpace*2;} 
+.section-title{ position: relative; top: 13px; z-index: 0; color: rgba(74,74,74,.1); display: block; .sansLight; font-size: 194px; letter-spacing: -6.33px; text-align: right; text-transform: uppercase;}
+.section-help{ .sansBold; font-size: @largestFont; position: relative; top: 2px; z-index: 1;}
 .section-subtitle{ .serif; font-size: @largerFont; margin: 0 0 @vSpace; text-align: center;}
 .text-title{ font-size: @smallFont; .sansLight; letter-spacing: 4px; margin: @vSpace 0 0 0; text-transform: uppercase;}
 .nav{ height: @vSpace;
@@ -66,7 +71,7 @@ body > section{ .clearfix;}
     }
     ::selection{ background-color: transparent; color: inherit;}
 }
-.footer{ background-color: @white; border-top: 1px dashed @blue; padding: @vSpace*2; text-align: center;
+.footer{ background-color: @bgcolor; padding: @vSpace*2; text-align: center;
     .btn-portfolio{ .btn-secondary; margin-right: @margin;}
     .btn-contact{ .btn-primary; margin-left: @margin;}
 }
