@@ -1,26 +1,28 @@
 ﻿// Colors -------------------------
 @white: #FFF;
 @black: #000;
-
-// eduK Custom Colors
-@white: #FFF;
-@grayLighter: #DBDBDB; //Separator
+@grayLighter: #DBDBDB;
 @grayLight: #AAAAAA; 
-@gray: #888888; //Navigation & Secondary Text
-@grayDark: #666666; //Post & Heading Text
-@grayDarker: #333333; //Sidebar Text
-@eduk: #ff4623; //Top Bar
+@gray: #888888;
+@grayDark: #666666;
+@grayDarker: #333333;
+
+// FabioZC Custom Colors
 @yellow: #FFCB41; //Sections
 @blue: #7989dd; //Slideshow Overlay (1x)
 @brown: #261B10; //Video Overlay (1x)
 @red: #ed2458; //Error for validation forms
 @green: #A5DC86; //Success for validatin forms
-@orange: #EC5421; //Details and buttons
+@orange:#ff4623; //Details and buttons
+
+// Background
+@bgcolor: @white;
+@bgcolor2: #f7f8fa;
 
 // Main
 @stColor: @grayDark;
 @ndColor: @gray;
-@rdColor: @eduk;
+@rdColor: @orange;
 
 // Text and Titles
 @titleColor: @grayDarker;
@@ -29,16 +31,11 @@
 @text2Color: @gray;
 
 // Links
-@postLinkColor: @orange; //Underline decoration on post links
-@linkColor: #F05522; //Buttons & Section Title Links ("Ver mais")
+@linkColor: @orange;
 @linkColorHover: lighten(@linkColor, 10%);
 @linkActiveColor: darken(@linkColor, 10%); //Button text color when background is filled with @linkColor
 @linkColorVisited: fade(@linkColor, 40%);
 @ndLink: @blue;
-
-// Background
-@bgcolor: #FFFFFF; //Background
-@bgcolor2: #f0ebeb; //Related Posts background (1x)
 
 // Inputs
 @inputColor: @gray;
@@ -54,29 +51,30 @@
 
 
 // Sizes -------------------------
-@space: 30px;
+@space: 40px;
 @padding: @space;
 @margin: @space;
-@vSpace: @baseLineHeight;
+@vSpace: @space*1.5;
 
 // Borders
 @baseBorderRadius: 2px;
 
 // Typography
-@smallestFont:			11px;
-@smallerFont:			13px;
-@smallFont:				14px;
-@regularFont:			16px;
-@largeFont:				22px;
-@largerFont:			26px;
-@largestFont:			32px;
+@smallestFont:			0.6rem;
+@smallerFont:			0.8rem;
+@smallFont:				0.9rem;
+@regularFont:			1rem;
+@largeFont:				1.7rem;
+@largerFont:			1.9rem;
+@largestFont:			2.4rem;
+@heroFont:				3.8rem;
 
-@baseFontFamily:        "Fira Sans", Helvetica, Arial;
-@baseFontSize:          @regularFont;
-@baseLineHeight:        44px;
+@baseFontFamily:        "SourceSansPro-Regular", Helvetica, Arial;
+@baseFontSize:          18px;
+@baseLineHeight:        1.7;
 
-@postFontSize:			16px;
-@postLineHeight: 		27px;
+@postFontSize:			@regularFont
+@postLineHeight: 		1.7;
 
 
 // Component Variables -------------------------

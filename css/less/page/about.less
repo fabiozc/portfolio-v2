@@ -6,10 +6,7 @@
 	.btn-contact{ .btn-secondary;
 		&:before{ content: "✉"; float: left; font-size: @largestFont; margin: 2px 10px -2px 0px;}
 	}
-	.tools-list,
-	.blogs-list,
-	.people-list,
-	.companies-list{ text-align: center; margin: @vSpace;
+	.inspiration-list{ margin: @vSpace; text-align: center;
 		li{ display: inline-block; font-size: @smallestFont; letter-spacing: 2px; line-height: 120%; margin: 0 -4px 22px 0; text-transform: uppercase; vertical-align: top; text-align: center;  width: 10%; min-height: 132px;
 			img{ .border-radius(100px); .box-shadow(0 0 0 3px @bgcolor,0 0 0 4px @grayLighter;); display: block; margin: 4px auto @margin/2; .transition(all @anim ease); .square(66px); }
 			a{ color: @stColor; display: block; height: 88px; .transition(all @anim ease);}
@@ -19,14 +16,15 @@
 			}
 		}
 	}
-	.skills{ display: block; margin: @vSpace*2 @margin @vSpace; text-align: center;
-		.skill-item{ color: @blue; display: inline-block; font-size: @largestFont*1.2; .sansLight; line-height: 44px; margin: 0 @margin/2;
-			&.largest{ font-size: @largestFont*2.2;}
-			&.larger{ font-size: @largestFont*1.9;}
-			&.large{ font-size: @largestFont*1.5;}
-			&.small{ font-size: @largestFont;}
-			&.smallest{ font-size: @largestFont*0.9;}
-			span{ font-size: @smallestFont; .sans;}
+	.skills{ display: block; margin: @vSpace*2 @margin/2 @vSpace; text-align: center;
+		@multiplier: 1.8;
+		.skill-item{ color: @blue; display: inline-block; .sansLight; font-size: @regularFont*@multiplier; line-height: 1.1; margin: 0 @margin/2;
+			&.largest{ font-size: @largestFont*@multiplier;}
+			&.larger{ font-size: @largerFont*@multiplier;}
+			&.large{ font-size: @largeFont*@multiplier;}
+			&.small{ font-size: @smallFont*@multiplier;}
+			&.smaller{ font-size: @smallerFont*@multiplier;}
+			&.smallest{ font-size: @smallestFont*@multiplier;}
 		}
 	}
 	.about-intro{ margin-bottom: @vSpace;

@@ -1,6 +1,4 @@
 /*** FABIOZC ***/
-body{ background-image: url('@{baseUrl}/img/bg.png'); background-color: #f7f8fa;}
-//body{ background-image: url('@{baseUrl}/img/grid.png');}
 
 // Base URL, Reset, Grid, Core variables and mixins
 @import "../custom/_baseurl.less";
@@ -12,22 +10,19 @@ body{ background-image: url('@{baseUrl}/img/bg.png'); background-color: #f7f8fa;
 @import "../custom/_common.less";
 
 /* Basic CSS */
-html{ overflow-x: hidden; }
-html,
-body{ height: 100%;}
+*,
+*:before,
+*:after{ box-sizing: border-box;}
+
+html{ overflow-x: hidden; font-size: @baseFontSize; line-height: @baseLineHeight; height: 100%;}
+body{ background-color: @bgcolor2; color: @textColor; .font-family; margin: 0;}
+body > section{ .clearfix;}
+
 a{ color: @linkColor; text-decoration: none; text-decoration: none;
     &:hover{ color: @linkColorHover; .transition(all @anim linear);}
 }
 img{ text-decoration: none; }
 ::selection{ background: @linkActiveColor; color: @white; text-shadow: none;}
-
-*,
-*:before,
-*:after{ box-sizing: border-box;}
-
-body{ background-color: @bgcolor;
- color: @textColor; .font-family; font-size: @regularFont; line-height: @baseLineHeight; margin: 0;}
-body > section{ .clearfix;}
 
 @containerSize: @desktop - @space;
 .container{ .clearfix; margin: 0 auto; width: @containerSize;
@@ -35,15 +30,14 @@ body > section{ .clearfix;}
         &{ width: 100%;}
     }
 }
-.main-section{ position: relative; background-color: @white;}
-.main-section:nth-child(1){ position: fixed; top: 0; right: 0; left: 0; z-index: -1; background-size: cover; height: 480px;}
-.main-section:nth-child(2){ margin-top: 480px; padding-top: 80px;}
 
-.portfolio,
-.contact,
-.about{ padding-bottom: @vSpace*2;} 
-.section-title{ position: relative; top: 5px; left: -10px; z-index: 0; color: rgba(100,100,100,.1); display: block; .sansLight; font-size: 140px; letter-spacing: -10px; text-align: left; text-transform: uppercase;}
-.section-help{ .sans; font-size: @largestFont; position: relative; z-index: 1;}
+@introHeight: 480px;
+.main-section:not(.intro){ position: relative; background-color: @white; padding-bottom: @vSpace*2;}
+.main-section:nth-child(1){ position: fixed; top: 0; right: 0; left: 0; z-index: -1; height: @introHeight;}
+.main-section:nth-child(2){ margin-top: @introHeight; padding-top: @introHeight/6;}
+
+.section-title{ color: rgba(100,100,100,.1); display: block; .sansLight; font-size: @largestFont; text-align: left; text-transform: uppercase;}
+.section-help{ .sans; font-size: @largeFont; position: relative; z-index: 1;}
 .section-subtitle{ .serif; font-size: @largerFont; margin: 0 0 @vSpace; text-align: center;}
 .text-title{ font-size: @smallFont; .sansLight; letter-spacing: 4px; margin: @vSpace 0 0 0; text-transform: uppercase;}
 .nav{ height: @vSpace;
