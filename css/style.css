@@ -354,25 +354,25 @@ body > section:after {
 }
 .section-title {
   position: relative;
-  top: 13px;
+  top: 5px;
+  left: -10px;
   z-index: 0;
-  color: rgba(74, 74, 74, 0.1);
+  color: rgba(100, 100, 100, 0.1);
   display: block;
   font-family: "SourceSansPro-Light", "Open Sans", Helvetica, sans-serif;
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
-  font-size: 194px;
-  letter-spacing: -6.33px;
-  text-align: right;
+  font-size: 140px;
+  letter-spacing: -10px;
+  text-align: left;
   text-transform: uppercase;
 }
 .section-help {
-  font-family: "SourceSansPro-Bold", "Open Sans", Helvetica, sans-serif;
-  font-weight: 900;
+  font-family: "SourceSansPro-Regular", "Open Sans", Helvetica, sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   font-size: 32px;
   position: relative;
-  top: 2px;
   z-index: 1;
 }
 .section-subtitle {
