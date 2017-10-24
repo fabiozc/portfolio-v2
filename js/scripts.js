@@ -51,11 +51,8 @@ $(document).ready(function($) {
 });
 
 $(document).scroll(function() {
-	$("#intro").css({
-		"background-position-y": (-$(this).scrollTop()/20)
-	});
-	$("#intro .container").css({
-		"opacity": 1 - (parseInt($(this).scrollTop())/350)
+	$(".js-intro").css({
+		"opacity": 1 - (parseInt($(this).scrollTop())/(parseInt($(".js-intro").css("height"))/1.3))
 	});
 });
 
