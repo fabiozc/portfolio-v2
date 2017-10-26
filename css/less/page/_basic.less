@@ -27,7 +27,7 @@ img{ text-decoration: none; }
 .container{ .clearfix; margin: 0 auto; width: @containerSize;
     @media (max-width: @mobile){
         @space: 15px;
-        &{ font-size: 16px; padding: @space; width: 100%;}
+        &{ font-size: 16px; padding: @space; width: 100%; text-align: center;}
     }
 }
 
@@ -37,7 +37,7 @@ img{ text-decoration: none; }
 .main-section:nth-child(2){ margin-top: @introHeight; padding-top: @vSpace;}
 
 .section-title,
-.section-subtitle{ display: block; .sansLight; font-size: @largerFont; margin: 0 0 @vSpace/2; text-align: left;}
+.section-subtitle{ display: block; .sansLight; font-size: @largerFont; margin: 0 0 @vSpace/2;}
 .section-subtitle{ font-size: @largeFont;}
 .text-title{ font-size: @smallFont; .sansLight; letter-spacing: 4px; margin: @vSpace 0 0 0; text-transform: uppercase;}
 .footer{ padding: @vSpace; text-align: center;

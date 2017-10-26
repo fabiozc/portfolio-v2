@@ -322,6 +322,7 @@ img {
     font-size: 16px;
     padding: 15px;
     width: 100%;
+    text-align: center;
   }
 }
 .main-section:not(.intro) {
@@ -349,7 +350,6 @@ img {
   -webkit-font-smoothing: antialiased;
   font-size: 1.9em;
   margin: 0 0 30px;
-  text-align: left;
 }
 .section-subtitle {
   font-size: 1.7em;
@@ -533,7 +533,7 @@ img {
 @media (max-width: 591px) {
   .intro {
     background-position: center bottom;
-    background-size: 70%;
+    background-size: 63%;
     font-size: 16px;
     text-align: center;
   }
@@ -589,7 +589,6 @@ img {
 }
 .about .inspiration-list {
   margin: 0 0 60px;
-  text-align: left;
 }
 .about .inspiration-list li {
   display: inline-block;
