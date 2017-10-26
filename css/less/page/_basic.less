@@ -26,7 +26,8 @@ img{ text-decoration: none; }
 @containerSize: @desktop - @space;
 .container{ .clearfix; margin: 0 auto; width: @containerSize;
     @media (max-width: @mobile){
-        &{ width: 100%;}
+        @space: 15px;
+        &{ font-size: 16px; padding: @space; width: 100%;}
     }
 }
 
@@ -42,14 +43,13 @@ img{ text-decoration: none; }
 .footer{ padding: @vSpace; text-align: center;
     .btn-portfolio{ .btn-secondary; margin-right: @margin;}
     .btn-contact{ .btn-primary; margin-left: @margin;}
-}
-.responsive-alert{ .hide;
-    @media (max-width: @desktop){
-        &{ .show; position: fixed; top: 0; z-index: 10; background-color: @blue; .box-shadow(0 3px 5px rgba(0,0,0,.2)); color: @white; font-size: @largeFont; letter-spacing: -1px; padding: @padding/2 0; text-align: center; width: 100%;}
+    @media (max-width: @mobile){ 
+    	&{ font-size: 16px; padding: @vSpace/2;}
+        .btn-portfolio,
+        .btn-contact{ display: block; margin: @margin/4 0;}
     }
 }
 
 
 /* SNIPPETS ---------------------------- */
 @import "../snippet/buttons.less";
-@import "../plugins/atv.less";

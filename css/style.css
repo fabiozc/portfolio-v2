@@ -319,6 +319,8 @@ img {
 }
 @media (max-width: 591px) {
   .container {
+    font-size: 16px;
+    padding: 15px;
     width: 100%;
   }
 }
@@ -345,15 +347,15 @@ img {
   font-family: "SourceSansPro-ExtraLight", "Open Sans", Helvetica, sans-serif;
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
-  font-size: 1.9rem;
+  font-size: 1.9em;
   margin: 0 0 30px;
   text-align: left;
 }
 .section-subtitle {
-  font-size: 1.7rem;
+  font-size: 1.7em;
 }
 .text-title {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   font-family: "SourceSansPro-ExtraLight", "Open Sans", Helvetica, sans-serif;
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
@@ -373,7 +375,7 @@ img {
   font-family: "SourceSansPro-Regular", "Open Sans", Helvetica, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
+  font-size: 1em;
   letter-spacing: 0.8px;
   line-height: 2.7;
   margin: 0 0 -1px;
@@ -400,7 +402,7 @@ img {
   font-family: "SourceSansPro-Regular", "Open Sans", Helvetica, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
+  font-size: 1em;
   letter-spacing: 0.8px;
   line-height: 2.7;
   margin: 0 0 -1px;
@@ -422,23 +424,15 @@ img {
   box-shadow: 0 3px 3px -3px rgba(255, 70, 35, 0.5);
   color: #FFF;
 }
-.responsive-alert {
-  display: none;
-}
-@media (max-width: 1200px) {
-  .responsive-alert {
+@media (max-width: 591px) {
+  .footer {
+    font-size: 16px;
+    padding: 30px;
+  }
+  .footer .btn-portfolio,
+  .footer .btn-contact {
     display: block;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    background-color: #7989dd;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    color: #FFF;
-    font-size: 1.7rem;
-    letter-spacing: -1px;
-    padding: 20px 0;
-    text-align: center;
-    width: 100%;
+    margin: 10px 0;
   }
 }
 /* SNIPPETS ---------------------------- */
@@ -451,7 +445,7 @@ img {
   font-family: "SourceSansPro-Regular", "Open Sans", Helvetica, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
+  font-size: 1em;
   letter-spacing: 0.8px;
   line-height: 2.7;
   margin: 0 0 -1px;
@@ -466,7 +460,7 @@ img {
   font-family: "SourceSansPro-Regular", "Open Sans", Helvetica, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
+  font-size: 1em;
   letter-spacing: 0.8px;
   line-height: 2.7;
   margin: 0 0 -1px;
@@ -495,7 +489,7 @@ img {
   font-family: "SourceSansPro-Regular", "Open Sans", Helvetica, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
+  font-size: 1em;
   letter-spacing: 0.8px;
   line-height: 2.7;
   margin: 0 0 -1px;
@@ -513,63 +507,6 @@ img {
   background-color: #ef2600;
   color: #FFF;
 }
-.atvImg {
-  border-radius: 5px;
-  transform-style: preserve-3d;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.atvImg img {
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(14, 21, 47, 0.25);
-}
-.atvImg-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  transition: all 0.2s ease-out;
-}
-.atvImg-container.over .atvImg-shadow {
-  box-shadow: 0 45px 100px rgba(14, 21, 47, 0.4), 0 16px 40px rgba(14, 21, 47, 0.4);
-}
-.atvImg-layers {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  overflow: hidden;
-  transform-style: preserve-3d;
-}
-.atvImg-rendered-layer {
-  position: absolute;
-  width: 104%;
-  height: 104%;
-  top: -2%;
-  left: -2%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: transparent;
-  background-size: cover;
-  transition: all 0.1s ease-out;
-}
-.atvImg-shadow {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-  transition: all 0.2s ease-out;
-  box-shadow: 0 8px 30px rgba(14, 21, 47, 0.6);
-}
-.atvImg-shine {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 5px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 60%);
-}
 /* PAGES ------------------------------- */
 /* INTRO ------------------------------ */
 .intro {
@@ -581,7 +518,7 @@ img {
   font-family: "SourceSansPro-Regular", "Open Sans", Helvetica, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  font-size: 3.3rem;
+  font-size: 3.3em;
   line-height: 1;
   margin-top: 172.2px;
 }
@@ -590,18 +527,73 @@ img {
   font-family: "SourceSansPro-ExtraLight", "Open Sans", Helvetica, sans-serif;
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
-  font-size: 1.9rem;
+  font-size: 0.55em;
   margin: 15px 0 0 3px;
-  padding-right: 10%;
+}
+@media (max-width: 591px) {
+  .intro {
+    background-position: center bottom;
+    background-size: 70%;
+    font-size: 16px;
+    text-align: center;
+  }
+  .intro .intro-title {
+    margin-top: 20px;
+  }
 }
 /* ABOUT ------------------------------ */
+.about .skills {
+  display: block;
+  margin: 60px 80px 60px;
+  text-align: center;
+}
+.about .skills .skill-item {
+  color: #7989dd;
+  display: inline-block;
+  font-family: "SourceSansPro-ExtraLight", "Open Sans", Helvetica, sans-serif;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1em;
+  line-height: 1.1;
+  margin: 0 13.33333333px;
+}
+.about .skills .skill-item.largest {
+  font-size: 2.7em;
+}
+.about .skills .skill-item.larger {
+  font-size: 1.9em;
+}
+.about .skills .skill-item.large {
+  font-size: 1.7em;
+}
+.about .skills .skill-item.small {
+  font-size: 0.8em;
+}
+.about .skills .skill-item.smaller {
+  font-size: 0.7em;
+}
+.about .skills .skill-item.smallest {
+  font-size: 0.55em;
+}
+@media (max-width: 591px) {
+  .about .skills {
+    margin: 30px 0;
+  }
+}
+.about .about-intro {
+  margin-bottom: 30px;
+}
+.about .about-intro .intro-text {
+  display: block;
+  font-size: 1em;
+}
 .about .inspiration-list {
   margin: 0 0 60px;
   text-align: left;
 }
 .about .inspiration-list li {
   display: inline-block;
-  font-size: 0.55rem;
+  font-size: 0.55em;
   letter-spacing: 2px;
   line-height: 120%;
   margin: 0 -4px 0 0;
@@ -609,6 +601,7 @@ img {
   vertical-align: top;
   text-align: center;
   width: 10%;
+  min-width: 60px;
   min-height: 132px;
 }
 .about .inspiration-list li img {
@@ -637,45 +630,13 @@ img {
 .about .inspiration-list li:hover img {
   box-shadow: 0 0 0 3px #FFF, 0 0 0 4px #ff4623;
 }
-.about .skills {
-  display: block;
-  margin: 60px 80px 60px;
-  text-align: center;
-}
-.about .skills .skill-item {
-  color: #7989dd;
-  display: inline-block;
-  font-family: "SourceSansPro-ExtraLight", "Open Sans", Helvetica, sans-serif;
-  font-weight: 100;
-  -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
-  line-height: 1.1;
-  margin: 0 13.33333333px;
-}
-.about .skills .skill-item.largest {
-  font-size: 2.7rem;
-}
-.about .skills .skill-item.larger {
-  font-size: 1.9rem;
-}
-.about .skills .skill-item.large {
-  font-size: 1.7rem;
-}
-.about .skills .skill-item.small {
-  font-size: 0.8rem;
-}
-.about .skills .skill-item.smaller {
-  font-size: 0.7rem;
-}
-.about .skills .skill-item.smallest {
-  font-size: 0.55rem;
-}
-.about .about-intro {
-  margin-bottom: 60px;
-}
-.about .about-intro .intro-text {
-  display: block;
-  font-size: 1rem;
+@media (max-width: 591px) {
+  .about .inspiration-list {
+    margin: 0;
+  }
+  .about .inspiration-list li {
+    width: 33%;
+  }
 }
 /* PORTFOLIO ------------------------------ */
 .portfolio .gallery {
@@ -711,14 +672,14 @@ img {
   font-family: "SourceSansPro-ExtraLight", "Open Sans", Helvetica, sans-serif;
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
-  font-size: 2.7rem;
+  font-size: 2.7em;
   line-height: 1;
   margin: 0 0 0 -6px;
   text-transform: uppercase;
   width: 540px;
 }
 .portfolio .port-title .port-wip {
-  font-size: 0.7rem;
+  font-size: 0.7em;
   font-family: "SourceSansPro-Regular", "Open Sans", Helvetica, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -726,7 +687,7 @@ img {
 }
 .portfolio .port-tag {
   display: inline-block;
-  font-size: 0.55rem;
+  font-size: 0.55em;
   letter-spacing: 4px;
   margin: 0 20px 0 0;
   text-transform: uppercase;
@@ -790,5 +751,51 @@ img {
   transform: perspective(600px) rotateY(0deg);
   margin-right: 0;
   margin-left: 40px;
+}
+@media (max-width: 591px) {
+  .portfolio .gallery {
+    margin-top: 30px;
+  }
+  .portfolio .port-gallery {
+    position: relative;
+    margin: 0;
+  }
+  .portfolio .port-item {
+    min-height: auto;
+  }
+  .portfolio .port-img {
+    float: none;
+    display: block;
+    margin: 0 0 40px;
+  }
+  .portfolio .port-img.port-img-1,
+  .portfolio .port-img.port-img-2,
+  .portfolio .port-img.port-img-3 {
+    transform: none !important;
+    -webkit-transform: none !important;
+  }
+  .portfolio .port-img.port-img-1:hover,
+  .portfolio .port-img.port-img-2:hover,
+  .portfolio .port-img.port-img-3:hover {
+    margin-left: 0;
+  }
+  .portfolio .port-img.port-img-2,
+  .portfolio .port-img.port-img-3 {
+    left: auto !important;
+    display: inline-block;
+    margin-right: 1%;
+    width: 48%;
+  }
+  .portfolio .port-img.port-img-2:last-child,
+  .portfolio .port-img.port-img-3:last-child {
+    margin-right: 0;
+  }
+  .portfolio .port-img.port-img-3 {
+    width: 31.5%;
+  }
+  .portfolio .port-title,
+  .portfolio .port-description {
+    width: auto;
+  }
 }
 /* CONTACT ------------------------------ */

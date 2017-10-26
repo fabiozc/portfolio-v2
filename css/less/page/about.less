@@ -1,15 +1,5 @@
 ﻿/* ABOUT ------------------------------ */
 .about{
-	.inspiration-list{ margin: 0 0 @vSpace; text-align: left;
-		li{ display: inline-block; font-size: @smallestFont; letter-spacing: 2px; line-height: 120%; margin: 0 -4px 0 0; text-transform: uppercase; vertical-align: top; text-align: center;  width: 10%; min-height: 132px;
-			img{ .border-radius(100px); .box-shadow(0 0 0 3px @bgcolor,0 0 0 4px @grayLighter;); display: block; margin: 4px auto @margin/2; .transition(all @anim ease); .square(66px); }
-			a{ color: @stColor; display: block; height: 88px; .transition(all @anim ease);}
-			&:hover{ color: @linkColor;
-				a{ color: @linkColor;}
-				img{ .box-shadow(0 0 0 3px @bgcolor,0 0 0 4px @linkColor;);}
-			}
-		}
-	}
 	.skills{ display: block; margin: @vSpace @margin*2 @vSpace; text-align: center;
 		@multiplier: 1;
 		.skill-item{ color: @blue; display: inline-block; .sansLight; font-size: @regularFont*@multiplier; line-height: 1.1; margin: 0 @margin/3;
@@ -20,8 +10,26 @@
 			&.smaller{ font-size: @smallerFont*@multiplier;}
 			&.smallest{ font-size: @smallestFont*@multiplier;}
 		}
+		@media (max-width: @mobile){
+			@multiplier: 0.8;
+			&{ margin: @vSpace/2 0;}
+		}
 	}
-	.about-intro{ margin-bottom: @vSpace;
+	.about-intro{ margin-bottom: @vSpace/2;
 		.intro-text{ display: block; font-size: @regularFont;}
+	}
+	.inspiration-list{ margin: 0 0 @vSpace; text-align: left;
+		li{ display: inline-block; font-size: @smallestFont; letter-spacing: 2px; line-height: 120%; margin: 0 -4px 0 0; text-transform: uppercase; vertical-align: top; text-align: center; width: 10%; min-width: 60px;min-height: 132px;
+			img{ .border-radius(100px); .box-shadow(0 0 0 3px @bgcolor,0 0 0 4px @grayLighter;); display: block; margin: 4px auto @margin/2; .transition(all @anim ease); .square(66px); }
+			a{ color: @stColor; display: block; height: 88px; .transition(all @anim ease);}
+			&:hover{ color: @linkColor;
+				a{ color: @linkColor;}
+				img{ .box-shadow(0 0 0 3px @bgcolor,0 0 0 4px @linkColor;);}
+			}
+		}
+		@media (max-width: @mobile){
+			&{ margin: 0;}
+			li{ width: 33%;}
+		}
 	}
 }

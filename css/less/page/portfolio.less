@@ -7,8 +7,8 @@
 	@portImgWidth3: @portImgWidth / 2.44;
 	@portImgHeight: auto;
 	@portContentWidth: @portImgWidth - @margin;
-
 	@portInnerShadow: 0 0 0 1px rgba(0,0,0,.05);
+
 	.port-item{ .clearfix; width: 100%; margin-bottom: @vSpace; min-height: 550px;
 		&:last-child{ margin-bottom: 0;}
 	}
@@ -35,4 +35,23 @@
 		.port-img-2,
 		.port-img-3{ left: 0; .box-shadow(@portInnerShadow,0px 30px 40px -10px rgba(0,0,0,.15);); transform: perspective(600px) rotateY(0deg); margin-right: 0; margin-left: @margin;}
 	}
+	@media (max-width: @mobile){
+		.gallery{ margin-top: @vSpace/2;}
+		.port-gallery{ position: relative; margin: 0;}
+		.port-item{ min-height: auto;}
+		.port-img{ float: none; display: block; margin: 0 0 @margin;
+			&.port-img-1,
+			&.port-img-2,
+			&.port-img-3{ transform: none !important; -webkit-transform: none !important;
+				&:hover{ margin-left: 0;}
+			}
+			&.port-img-2,
+			&.port-img-3{ left: auto !important; display: inline-block; margin-right: 1%; width: 48%;
+				&:last-child{ margin-right: 0;}
+			}
+			&.port-img-3{ width: 31.5%;}
+		}
+		.port-title,
+		.port-description{ width: auto;}
+ 	}
 }
