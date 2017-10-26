@@ -307,6 +307,8 @@ img {
   *zoom: 1;
   margin: 0 auto;
   width: 1160px;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 .container:before,
 .container:after {
@@ -317,7 +319,7 @@ img {
 .container:after {
   clear: both;
 }
-@media (max-width: 591px) {
+@media (max-width: 980px) {
   .container {
     font-size: 16px;
     padding: 15px;
@@ -424,7 +426,7 @@ img {
   box-shadow: 0 3px 3px -3px rgba(255, 70, 35, 0.5);
   color: #FFF;
 }
-@media (max-width: 591px) {
+@media (max-width: 980px) {
   .footer {
     font-size: 16px;
     padding: 30px;
@@ -530,7 +532,7 @@ img {
   font-size: 0.55em;
   margin: 15px 0 0 3px;
 }
-@media (max-width: 591px) {
+@media (max-width: 980px) {
   .intro {
     background-position: center bottom;
     background-size: 63%;
@@ -575,7 +577,7 @@ img {
 .about .skills .skill-item.smallest {
   font-size: 0.55em;
 }
-@media (max-width: 591px) {
+@media (max-width: 980px) {
   .about .skills {
     margin: 30px 0;
   }
@@ -629,7 +631,7 @@ img {
 .about .inspiration-list li:hover img {
   box-shadow: 0 0 0 3px #FFF, 0 0 0 4px #ff4623;
 }
-@media (max-width: 591px) {
+@media (max-width: 980px) {
   .about .inspiration-list {
     margin: 0;
   }
@@ -751,7 +753,7 @@ img {
   margin-right: 0;
   margin-left: 40px;
 }
-@media (max-width: 591px) {
+@media (max-width: 980px) {
   .portfolio .gallery {
     margin-top: 30px;
   }
