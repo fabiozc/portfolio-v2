@@ -4,7 +4,6 @@
 @import "../custom/_baseurl.less";
 @import "../custom/_reset.less";
 @import "../custom/_variables.less";
-@import "../custom/_grid.less";
 @import "../custom/_mixins.less";
 @import "../custom/_font.less";
 @import "../custom/_common.less";
@@ -22,7 +21,7 @@ a{ color: @linkColor; text-decoration: none; text-decoration: none;
     &:hover{ color: @linkColorHover; .transition(all @anim linear);}
 }
 img{ text-decoration: none; }
-::selection{ background: @linkActiveColor; color: @white; text-shadow: none;}
+::selection{ background: @linkColor; color: @white; text-shadow: none;}
 
 @containerSize: @desktop - @space;
 .container{ .clearfix; margin: 0 auto; width: @containerSize;
@@ -32,40 +31,15 @@ img{ text-decoration: none; }
 }
 
 @introHeight: 480px;
-.main-section:not(.intro){ position: relative; background-color: @white; padding-bottom: @vSpace*2;}
+.main-section:not(.intro){ position: relative; background-color: @white; padding-bottom: @vSpace;}
 .main-section:nth-child(1){ position: fixed; top: 0; right: 0; left: 0; z-index: -1; height: @introHeight;}
-.main-section:nth-child(2){ margin-top: @introHeight; padding-top: @introHeight/6;}
+.main-section:nth-child(2){ margin-top: @introHeight; padding-top: @vSpace;}
 
-.section-title{ color: rgba(100,100,100,.1); display: block; .sansLight; font-size: @largestFont; text-align: left; text-transform: uppercase;}
-.section-help{ .sans; font-size: @largeFont; position: relative; z-index: 1;}
-.section-subtitle{ .serif; font-size: @largerFont; margin: 0 0 @vSpace; text-align: center;}
+.section-title,
+.section-subtitle{ display: block; .sansLight; font-size: @largerFont; margin: 0 0 @vSpace/2; text-align: left;}
+.section-subtitle{ font-size: @largeFont;}
 .text-title{ font-size: @smallFont; .sansLight; letter-spacing: 4px; margin: @vSpace 0 0 0; text-transform: uppercase;}
-.nav{ height: @vSpace;
-    a{ border-bottom: 2px solid transparent; border-top: 2px solid transparent; border-radius: 2px; display: inline-block; font-size: @smallerFont; line-height: 40px; margin: 0 @margin/4 0 0; padding: 0 @padding/2; text-transform: uppercase;
-        &:hover{ background-color: @linkColor; color: @white;}
-        &.active{ border-bottom-color: @ndLink; border-radius: 0px; color: @ndLink; cursor: default;
-            &:hover{ background-color: transparent;}
-        }
-    }
-}
-.nav-controls{ position: absolute; left: 0; right: 0;
-    .nav-control{ position: absolute; top: -(223px + @vSpace*3.5); color: transparent; cursor: pointer; display: inline-block; font-size: @smallestFont; letter-spacing: 2px; text-align: center; text-transform: uppercase; .transition(all @anim linear);
-        &:before{ background-color: transparent; color: @linkColor; display: block; font-size: @largestFont; line-height: @vSpace - 4px; padding: 4px @padding/4 0;}
-        &:hover{ color: inherit;
-            &:before{ background-color: @linkColor; color: @white; .transition(all @anim linear);}
-        }
-    }
-    .nav-prev{ left: 0; text-align: right;
-        &:before{ content: "←"; .border-radius-R(2px); margin-right: -5px; padding-left: @padding/2;}
-        &:hover:before{ padding-left: @padding;}
-    }
-    .nav-next{ right: 0; text-align: left;
-        &:before{ content: "→"; .border-radius-L(2px); margin-left: -12px; padding-left: @padding/4 + 3px; padding-right: @padding/2 - 3px;}
-        &:hover:before{ padding-right: @padding;}
-    }
-    ::selection{ background-color: transparent; color: inherit;}
-}
-.footer{ background-color: @bgcolor; padding: @vSpace*2; text-align: center;
+.footer{ padding: @vSpace; text-align: center;
     .btn-portfolio{ .btn-secondary; margin-right: @margin;}
     .btn-contact{ .btn-primary; margin-left: @margin;}
 }
@@ -77,10 +51,5 @@ img{ text-decoration: none; }
 
 
 /* SNIPPETS ---------------------------- */
-//@import "../snippet/loading.less";
-//@import "../snippet/icons.less";
 @import "../snippet/buttons.less";
-//@import "../snippet/form.less";
-//@import "../snippet/post.less";
-//@import "../snippet/comments.less";
-//@import "../snippet/modal.less";
+@import "../plugins/atv.less";

@@ -1,13 +1,7 @@
 ﻿/* ABOUT ------------------------------ */
 .about{
-	.btn-resume{ .btn-secondary;
-		&:before{ content: "⇤"; float: left; font-size: @largeFont; margin: -1px 10px 0 0px; .rotate(-90deg);}
-	}
-	.btn-contact{ .btn-secondary;
-		&:before{ content: "✉"; float: left; font-size: @largestFont; margin: 2px 10px -2px 0px;}
-	}
-	.inspiration-list{ margin: @vSpace; text-align: center;
-		li{ display: inline-block; font-size: @smallestFont; letter-spacing: 2px; line-height: 120%; margin: 0 -4px 22px 0; text-transform: uppercase; vertical-align: top; text-align: center;  width: 10%; min-height: 132px;
+	.inspiration-list{ margin: 0 0 @vSpace; text-align: left;
+		li{ display: inline-block; font-size: @smallestFont; letter-spacing: 2px; line-height: 120%; margin: 0 -4px 0 0; text-transform: uppercase; vertical-align: top; text-align: center;  width: 10%; min-height: 132px;
 			img{ .border-radius(100px); .box-shadow(0 0 0 3px @bgcolor,0 0 0 4px @grayLighter;); display: block; margin: 4px auto @margin/2; .transition(all @anim ease); .square(66px); }
 			a{ color: @stColor; display: block; height: 88px; .transition(all @anim ease);}
 			&:hover{ color: @linkColor;
@@ -16,9 +10,9 @@
 			}
 		}
 	}
-	.skills{ display: block; margin: @vSpace*2 @margin/2 @vSpace; text-align: center;
-		@multiplier: 1.8;
-		.skill-item{ color: @blue; display: inline-block; .sansLight; font-size: @regularFont*@multiplier; line-height: 1.1; margin: 0 @margin/2;
+	.skills{ display: block; margin: @vSpace @margin*2 @vSpace; text-align: center;
+		@multiplier: 1;
+		.skill-item{ color: @blue; display: inline-block; .sansLight; font-size: @regularFont*@multiplier; line-height: 1.1; margin: 0 @margin/3;
 			&.largest{ font-size: @largestFont*@multiplier;}
 			&.larger{ font-size: @largerFont*@multiplier;}
 			&.large{ font-size: @largeFont*@multiplier;}
@@ -28,14 +22,6 @@
 		}
 	}
 	.about-intro{ margin-bottom: @vSpace;
-		.intro-text{ display: inline-block; width: 70%;}
-		.twisted{ display: inline-block; .rotate(-5deg);}
-		.btn-intro{ display: inline-block; float: right; margin-top: @vSpace*2 - 3px;
-			&.btn-contact{ margin-top: @vSpace - 3px;}
-		}
+		.intro-text{ display: block; font-size: @regularFont;}
 	}
-	//.ig-item{ .hide;
-	//	&.active{ .show;}
-	//}
-	
 }
