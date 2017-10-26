@@ -437,6 +437,12 @@ img {
     margin: 10px 0;
   }
 }
+.copy {
+  background: #FFF;
+  display: block;
+  padding: 30px;
+  text-align: center;
+}
 /* SNIPPETS ---------------------------- */
 /* BUTTONS ------------------------------ */
 .btn {

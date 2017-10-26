@@ -24,7 +24,7 @@ img{ text-decoration: none; }
 ::selection{ background: @linkColor; color: @white; text-shadow: none;}
 
 @containerSize: @desktop - @space;
-.container{ .clearfix; margin: 0 auto; width: @containerSize; transform: translateZ(0);-webkit-transform: translateZ(0);
+.container{ .clearfix; margin: 0 auto; width: @containerSize; transform: translateZ(0); -webkit-transform: translateZ(0);
     @media (max-width: @mobile){
         @space: 15px;
         &{ font-size: 16px; padding: @space; width: 100%; text-align: center;}
@@ -49,6 +49,7 @@ img{ text-decoration: none; }
         .btn-contact{ display: block; margin: @margin/4 0;}
     }
 }
+.copy{ background: @white; display: block; padding: @vSpace/2; text-align: center;}
 
 
 /* SNIPPETS ---------------------------- */
