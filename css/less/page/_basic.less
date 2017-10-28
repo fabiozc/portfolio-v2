@@ -37,7 +37,9 @@ img{ text-decoration: none; }
 .main-section:nth-child(2){ margin-top: @introHeight; padding-top: @vSpace;}
 
 .section-title,
-.section-subtitle{ display: block; .sansLight; font-size: @largerFont; margin: 0 0 @vSpace/2;}
+.section-subtitle{ display: block; .sansLight; font-size: @largerFont; margin: 0 0 @vSpace/2;
+	@media (max-width: @mobile){ margin: 0 @vSpace/3 @vSpace/2;}
+}
 .section-subtitle{ font-size: @largeFont;}
 .text-title{ font-size: @smallFont; .sansLight; letter-spacing: 4px; margin: @vSpace 0 0 0; text-transform: uppercase;}
 .footer{ padding: @vSpace; text-align: center;
