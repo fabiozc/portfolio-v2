@@ -802,11 +802,16 @@ img {
   .portfolio .port-img.port-img-3:last-child {
     margin-right: 0;
   }
+  .portfolio .port-img.port-img-2:nth-child(n+0),
+  .portfolio .port-img.port-img-3:nth-child(n+0) {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0px 35px 40px -15px rgba(0, 0, 0, 0.15);
+  }
   .portfolio .port-img.port-img-3 {
     width: 31.5%;
   }
   .portfolio .port-title,
   .portfolio .port-description {
+    margin-right: 0;
     width: auto;
   }
 }

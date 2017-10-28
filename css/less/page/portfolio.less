@@ -48,10 +48,11 @@
 			&.port-img-2,
 			&.port-img-3{ left: auto !important; display: inline-block; margin-right: 1%; width: 48%;
 				&:last-child{ margin-right: 0;}
+				&:nth-child(n+0){ .box-shadow(@portInnerShadow,0px 35px 40px -15px rgba(0,0,0,.15););}
 			}
 			&.port-img-3{ width: 31.5%;}
 		}
 		.port-title,
-		.port-description{ width: auto;}
+		.port-description{ margin-right: 0; width: auto;}
  	}
 }
