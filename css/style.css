@@ -443,6 +443,11 @@ img {
   padding: 30px;
   text-align: center;
 }
+@media (max-width: 980px) {
+  .copy {
+    font-size: 0.8rem;
+  }
+}
 /* SNIPPETS ---------------------------- */
 /* BUTTONS ------------------------------ */
 .btn {
