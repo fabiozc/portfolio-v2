@@ -820,5 +820,8 @@ img {
     margin-right: 0;
     width: auto;
   }
+  .portfolio .port-tag {
+    margin: 0 10px;
+  }
 }
 /* CONTACT ------------------------------ */
