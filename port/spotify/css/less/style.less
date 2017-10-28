@@ -1,0 +1,150 @@
+/* TO DO LIST:
+OK - Set a small font size (or alpha) to time text
+OK - Adjust margin right on options button
+OK - Adjust close button size
+OK - Toggle class to play/pause button
+OK - Lose focus when click on background
+- Insert dropdown on "more":
+    - Volume range
+    - Start Radio, Share, Shuffle, Repeat, Add/Remove Favorite, Add to playlist, Add to queue, Go to Album, Go to Artist, Search input
+    - Add respective icons
+    - Add pop effect
+    - Focus on search input when open
+- Add a switch to view premium/free version
+    - Add upgrade class to miniplayer
+    - Add upgrade green tab on right of miniplayer
+- Convert Proxima Nova to webfont
+- After click to favorite, popup "Saved to Your Music" on center of screen
+- After click to  remove favorite, popup "Removed fro Your Music" on center of screen
+- Make next/prev button work
+- Get others artworks
+- Resize yosemite background
+- Click to expand artwork
+- Add playable sample songs (?)
+
+- Add share page buttons
+    - Add facebook image
+    - Double check title and descriptions
+- Add twitter contact @fabiozc
+- Add "thanks" and copyright information
+- Think what to do with Proxima Nova copyright
+
+- Mobile solution or warning (?)
+- Add google analytics
+- Clear reset.less
+- Organize LESS itens
+- Cross-browser (Chrome, Safari and Firefox) check
+- Performance checks
+- Upload to github
+- Upload to server
+- Spread the word
+    - Smashing Magazine
+    - Mashable
+    - Engadget
+    - Macmagazine
+    - Spotify Forum
+    - Noupe
+    - Add to Dribble
+    - Add to Behance
+
+*/
+
+@import "custom/custom-reset.less";
+@import "custom/custom-variables.less";
+@import "custom/custom-mixins.less";
+@import "custom/custom-font.less";
+@import "custom/custom-common.less";
+
+
+
+/* Basic CSS */
+htm {-webkit-font-smoothing: antialiased;}
+div, ul, li { position: relative; margin: 0; padding: 0;}
+html, div, header, section, footer{ display: block;}
+a{ color: @linkColor; text-decoration: none; text-decoration: none;}
+
+::selection{ background: transparent;}
+
+body{ background: @bgcolor url("../img/Yosemite.jpg") no-repeat; background-size: 100%; color: @textColor; font-size: @baseFontSize; line-height: 100%; margin: 0; .sans; text-align: center;}
+
+.miniplayer{ position: absolute; right: 8%; top: 10%; .box-sizing(border-box); border-radius: @baseBorderRadius; background: rgba(34,34,38,.95); color: @white; overflow: hidden; padding: 8px; .size(400px,65px);
+    &.on{ box-shadow: 0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);}
+    .cover-bg{ position: absolute; top: -40px; left: -40px; background: url("../img/cover-jimihendrix.jpg") no-repeat center center; background-size: 100%; border-radius: @baseBorderRadius; display: block; -webkit-filter: blur(20px); padding: 40px; opacity: .2; width: 100%; height: 100%;}
+    .buttons{ float: left; margin-right: 8px; text-align: left; width: 13px; z-index: 3; text-align: center; .transition(all @anim linear);
+        .close{ .icon; color: @white4; font-size: 12px; height: 13px;
+            &:before{ .icon-cancel; border: 1px solid @white4; border-radius: 15px;}
+            &:hover:before{ border-color: @white; color: @white;}
+        }
+        .spotify{ .icon; .square(13px); background: url("../img/spotify.png") no-repeat center center; content: ""; display: inline-block; margin-top: 9px; text-indent: -999px; visibility: visible;}
+    }
+    &:hover,
+    &.draggable{
+        .time-bar{ width: 70% !important;}
+        .controls{ margin-left: 0px; opacity: 1;}
+    }
+    .controls{ z-index: 2; float: left; margin: 1px @margin/2 0 -140px; opacity: 0; .transition(all @anim linear);
+        @borderPadding: 6px;
+        @baseLine: 42px;
+        .prev,
+        .next{ .icon; color: @white3; display: inline-block; font-size: 30px; .size(23px,30px); line-height: @baseLine + @borderPadding/1.5; 
+            &:before{.transition(all @anim linear);}
+            &:hover:before{ color: @white; text-shadow: 0 0 5px @white4;}
+        }
+        .prev{ margin-right: 3px;
+            &:before{ .icon-to-start;}
+        }
+        .next{ margin-left: 3px;
+            &:before{ .icon-to-end;}
+        }
+        .play-pause{ .icon; .square(@baseLine); color: @white2; font-size: 34px; line-height: @baseLine;
+            &:before{ border-radius: 30px; border: 1px solid @white4; padding: @borderPadding; .transition(all @anim linear);}
+            &:hover{ color: @white;}
+            &.playing:before{ .icon-pause;}
+            &.paused{ background-color: @green;
+                &:before{ .icon-play; text-indent: 4px; background-color: @green; border-color: darken(@green,10%); box-shadow: inset 0 0 0 2px @gray3;}
+                &:hover:before{ border-color: @green; box-shadow: inset 0 0 0 2px @green;}
+            }
+            &.playing:hover{ color: @white; text-shadow: 0 0 5px @white4;
+                &:before{ border-color: @white; }
+            }
+        }
+    }
+    .playlist{ position: relative;}
+    .song{ color: @white; display: block; margin-bottom: 8px; text-align: left; z-index: 1; .transition(all @anim linear);
+        .options{ overflow: hidden; float: right; margin-right: 0px; padding-right: 4px; height: 34px;
+            .star,
+            .more{ .icon; color: @white4; display: inline-block; font-size: 22px; margin-left: 5px; .square(30px); line-height: 24px; text-align: center;
+                &:before{ border-radius: 30px; border: 1px solid @white4; padding: 5px; }
+                &:hover{ color: @white;
+                    &:before{ border-color: @white; color: @white;}
+                }
+                &.selected:before{ border-color: @green !important; color: @green !important;}
+            }
+            .star:before{ .icon-check;}
+            .more:before{ .icon-ellipsis;}
+        }
+        .more-menu{ position: absolute; top: 34px; left: -100px; z-index: 5; background-color: @gray3; visibility: visible; width: 200px; height: 300px;
+            &:before{ position: absolute; left: 50%; margin-left: -5px; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid @gray3; content: ""; display: block; .square(10px);}
+        }
+        .more-item{ display: block; padding: @padding/2 @padding/4;
+            a{
+                &:before{}
+                &:hover{}
+            }
+        }
+        .artwork{ border: 1px solid black; float: left; margin-right: 10px; .square(48px);}
+        .title{ font-size: 13px; .semi-bold; margin-bottom: 5px;}
+        .title,
+        .artist{ display: block; line-height: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .artist{ .light; font-size: 12px; margin-bottom: 9px;}
+        .time{ clear: right; display: block; overflow: auto; overflow-y: hidden; text-align: center;}
+        .time-current{ float: left;}
+        .time-current,
+        .time-end{ color: @white2; .light; font-size: 11px;}
+        .time-end{ float: right;}
+        .time-bar{ position: relative; top: -5px; background-color: @gray3; border-radius: @baseBorderRadius; content: ""; display: inline-block; margin: 0 auto; .size(83%,1px);}
+        .time-complete{ position: absolute; top: 0; left: 0; background-color: @green; border-radius: @baseBorderRadius; display: inline-block; font-size: 0px; .size(30%,1px);}
+    }
+}
+@import "custom/custom-animation.less";
+//@import "plugin/rangeslider.css";

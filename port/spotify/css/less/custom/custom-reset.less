@@ -1,0 +1,42 @@
+//
+// Adapted from http://github.com/necolas/normalize.css
+// --------------------------------------------------
+
+strong{ .bold;}
+h1,h2,h3,h4,h5,h6{ margin: 0; text-rendering: optimizelegibility;}
+h1,h2,h3,h4,h5,h6,p,li,span,strong,small{ cursor: default;}
+a span,a strong,a small{ cursor: pointer;}
+input, button{ position: relative; .sans;}
+ul,ol{padding: 0;margin: 0 0 @baseLineHeight / 2 25px; list-style: none;}
+ul ul,ul ol,ol ol,ol ul{margin-bottom: 0;}
+li{line-height: @baseLineHeight;}
+p{ margin: 0 0 @margin/2 0;}
+
+// Base settings
+// -------------------------
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+// Focus states
+a:focus {
+  .tab-focus();
+}
+// Hover & Active
+a:hover,
+a:active {
+  outline: 0;
+}
+
+// Img border in a's and image quality
+// -------------------------
+
+img {
+  max-width: 100%; // Make images inherently responsive
+  height: auto; // Make images inherently responsive
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
